@@ -23,7 +23,7 @@ function ToxicityReport({ effect, model, trigger }) {
       setLoading(true);
       setReport('');
       try {
-        const res = await fetch('http://localhost:5000/generate', {
+        const res = await fetch('https://100-agent-hackathon-backend.vercel.app/generate', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
