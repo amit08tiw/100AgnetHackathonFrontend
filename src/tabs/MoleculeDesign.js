@@ -19,7 +19,7 @@ function MoleculeDesign({ effect, model, trigger }) {
     const fetchDesign = async () => {
       setLoading(true);
       try {
-        const res = await fetch('http://localhost:5000/generate', {
+        const res = await fetch('https://100-agent-hackathon-backend.vercel.app/generate', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ effect, model, mode: 'molecule-design' })
@@ -40,7 +40,7 @@ function MoleculeDesign({ effect, model, trigger }) {
   useEffect(() => {
     if (!result) return;
   
-    fetch('http://localhost:5000/search-evidence', {
+    fetch('https://100-agent-hackathon-backend.vercel.app/search-evidence', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ effect })
