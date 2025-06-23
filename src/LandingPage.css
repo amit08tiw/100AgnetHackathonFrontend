@@ -1,0 +1,442 @@
+body{
+    /* background-image: url('../public/assets/back.jpg'); */
+}
+.landing-page {
+    /* padding: 3rem 0rem; */
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom right, #ff8888, #04056f);
+    min-height: 100vh;
+  }
+  
+  .landing-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    /* background-image: url('../public/assets/back.jpg'); */
+    padding-bottom: 80px;
+    padding-top: 60px;
+  }
+  .quotes{
+    font-size: 4rem;
+  }
+  .where-molecule{
+    font-size: 80px;
+    margin-top: 0px;
+    color: #fff;
+  }
+  .powered-by {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent */
+    backdrop-filter: blur(10px); /* Glass blur */
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Soft border */
+    border-radius: 12px;
+    padding: 4px 16px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    display: inline-block;
+    margin-top: 90px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  }
+  .powered-by:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: scale(1.03);
+    transition: all 0.3s ease;
+  }
+  
+  
+  .agentNet{
+    color: #fff;
+  }
+  .where-molecule-description{
+    font-size: 23px;
+    font-weight: 100;
+    width: 800px;
+    color: #fff;
+    text-align: center;
+    margin: auto;
+  }
+  .bioforge{
+    background: linear-gradient(to bottom right,#fff, #6f42c1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+  }
+  .landing-glow {
+    font-size: 4.75rem;
+    /* background: linear-gradient(to right, #6f42c1, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold; */
+    /* color: #1a1a1a; */
+    /* text-shadow: 0 0 10px #b3e5fc; */
+  }
+  /* .built-for{
+    text-align: center;
+    font-size: 2rem;
+
+  } */
+  
+  .landing-buttons {
+    margin-top: 3.5rem;
+  }
+  
+  .try-button, .demo-button {
+    margin: 0 1rem;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  .try-button:hover,
+  .demo-button:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+  }
+ 
+  
+  .try-button {
+    background: linear-gradient(to right, #3b82f6, #7c3aed);
+    color: white;
+    width: 300px;
+  }
+  
+  .demo-button {
+    background: linear-gradient(to right, #3b82f6, #7c3aed);
+    color: white;
+    width: 300px;
+  }
+  .credit{
+    font-size: 20px;
+    color: #bbbbbb;
+    font-weight: 100;
+  }
+  .why-section {
+    background: rgba(255, 255, 255, 0.1); /* semi-transparent background */
+    border-radius: 20px;
+    padding: 40px;
+    margin: 60px auto;
+    max-width: 1000px;
+  
+    /* glass effect */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  
+    color: white;
+  }
+  
+  
+  .why-section:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+  }
+  
+  .why-section .built-for {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1f3b64;
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'Segoe UI', sans-serif;
+    position: relative;
+  }
+  
+  .quotes {
+    font-size: 2.2rem;
+    color: #0077b6;
+  }
+  
+  .why-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .why-section li {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 18px;
+    padding-left: 32px;
+    position: relative;
+    line-height: 1.6;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .why-section li::before {
+    content: "✨";
+    position: absolute;
+    left: 0;
+    top: 2px;
+    font-size: 1rem;
+  }
+  
+  /* .why-section ul li {
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .why-section li {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+  } */
+  
+  /* Container section */
+.how-it-works {
+    display: flex;
+    flex-direction: row; /* Horizontal layout */
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 60px 40px;
+    flex-wrap: wrap; /* allow wrapping on small screens */
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  }
+  .how-it-worksp {
+    flex-direction: row; /* Horizontal layout */
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 60px 40px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  }
+  /* Section Title */
+  .how-it-works h2 {
+    flex: 1 1 100%;
+    font-size: 5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: center;
+  }
+  .how-it-worksp h2 {
+    flex: 1 1 100%;
+    font-size: 5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: center;
+  }
+  
+  /* Flex container for cards */
+  .steps {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  /* Individual step cards with glass look */
+  .step-card {
+    flex: 1 1 250px;
+    padding: 20px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: white;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  .step-cardp {
+    padding: 20px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: white;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  .step-cardp:hover {
+    transform: scale(1.05);
+  }
+  
+  .step-card:hover {
+    transform: scale(1.05);
+  }
+  .glass-card {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(16px);
+    color: white;
+    transition: transform 0.3s ease;
+  }
+  .glass-card:hover {
+    transform: scale(1.03);
+  }
+  .select-plan {
+    cursor: pointer;
+  }
+  
+  
+  
+  
+  .testimonial-section {
+    text-align: center;
+    background: #fff;
+    padding: 3rem 1rem;
+    margin: 3rem 0;
+  }
+  
+  .testimonial-section blockquote {
+    font-style: italic;
+    font-size: 1.2rem;
+    margin: 1rem auto;
+    max-width: 700px;
+  }
+  
+  .pricing-cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .pricing-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    width: 220px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .select-plan {
+    margin-top: 1rem;
+    background: #673ab7;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 4
+  }  
+
+.footer{
+    background-color: #000b2d;
+    color: white;
+    margin-top: 0px;
+    padding: 20px 20px;
+}
+.contact-section{
+    background: #011453;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+.top-nav {
+    position: fixed;
+    top: 0;
+    width: 98%;
+    z-index: 999;
+    background: rgba(0, 0, 0, 0.85);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 24px;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    backdrop-filter: blur(12px);
+  }
+  
+  .nav-logo {
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: #ffffff;
+  }
+  
+  .nav-logo .bioforge {
+    color: #7ed6df;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    cursor: pointer;
+    color: #eee;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links li:hover {
+    color: #7ed6df;
+  }
+  
+  .get-started-btn {
+    background: linear-gradient(to right, #3b82f6, #7c3aed);
+    border: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .get-started-btn:hover {
+    transform: scale(1.05);
+  }
+  .loader-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(12px);
+    background: rgba(0, 0, 0, 0.35);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .complex-spinner {
+    font-size: 1.4rem;
+    padding: 25px 40px;
+    border-radius: 20px;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(16px);
+    animation: pulse 1.3s infinite ease-in-out;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.15);
+    }
+    50% {
+      transform: scale(1.05);
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.25);
+    }
+    100% {
+      transform: scale(1);
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.15);
+    }
+  }
+  
+  /* Optional: Glass nav if not yet styled */
+  .glass-nav {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  

@@ -1,0 +1,279 @@
+/* === GLOBAL === */
+body {
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .app.dark {
+    background-color: #121212;
+    color: #f1f1f1;
+  }
+  
+  .app.light {
+    background-color: #f9f9f9;
+    color: #222;
+  }
+  
+  /* === TABS NAVIGATION === */
+  .nav-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    border-bottom: 2px solid #e0e0e0;
+    margin-bottom: 20px;
+  }
+  
+  .nav-tabs a {
+    padding: 10px 16px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #6f42c1;
+    border-bottom: 3px solid transparent;
+    transition: all 0.2s ease;
+    border-radius: 6px 6px 0 0;
+  }
+  
+  .nav-tabs a:hover {
+    background: #f2f2f2;
+  }
+  
+  .nav-tabs a.active {
+    background: #fff;
+    border-color: #6f42c1;
+  }
+  
+  .dark .nav-tabs a {
+    color: #bb86fc;
+  }
+  
+  .dark .nav-tabs a:hover {
+    background-color: #2b2b2b;
+  }
+  
+  .dark .nav-tabs a.active {
+    background: #1c1c1c;
+    border-color: #bb86fc;
+  }
+  
+  /* === TAB CONTAINER === */
+  .tab-content {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    line-height: 1.6;
+    transition: all 0.3s ease;
+  }
+  
+  .dark .tab-content {
+    background-color: #1e1e1e;
+    color: #ddd;
+  }
+  
+  /* === COMMON SECTION HEADER === */
+  .tab-section {
+    margin-bottom: 1.5rem;
+  }
+  
+  .tab-section h2 {
+    font-size: 1.4rem;
+    color: #6f42c1;
+  }
+  
+  .dark .tab-section h2 {
+    color: #bb86fc;
+  }
+  
+  /* === TABLE STYLE === */
+  .tab-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  .tab-table th,
+  .tab-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .tab-table th {
+    background: #eee;
+  }
+  
+  .tab-table tr:nth-child(even) {
+    background: #f9f9f9;
+  }
+  
+  .dark .tab-table th {
+    background: #333;
+    color: #ccc;
+  }
+  
+  .dark .tab-table td {
+    background: #222;
+    color: #ccc;
+  }
+  
+  /* === BUTTONS === */
+  .tab-button {
+    padding: 10px 14px;
+    background: #6f42c1;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+    margin-top: 1rem;
+  }
+  
+  .tab-button:hover {
+    background: #5a379f;
+  }
+  
+  .dark .tab-button {
+    background: #bb86fc;
+    color: #000;
+  }
+  
+  /* === INDIVIDUAL TAB STYLES === */
+  
+  /* Molecule Comparison Cards */
+  .comparison-card {
+    border: 1px solid #ccc;
+    padding: 16px;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    background-color: #fafafa;
+  }
+  
+  .dark .comparison-card {
+    background-color: #2a2a2a;
+    border-color: #444;
+  }
+  
+  /* Toxicity Bullet Points */
+  .toxicity-report ul {
+    padding-left: 20px;
+  }
+  
+  .toxicity-report li {
+    margin-bottom: 6px;
+  }
+  
+  /* Regulatory List */
+  .regulatory-list {
+    list-style-type: square;
+    padding-left: 20px;
+  }
+  
+  /* Version History */
+  .version-history-entry {
+    background-color: #f3f3f3;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-left: 4px solid #6f42c1;
+    border-radius: 6px;
+  }
+  
+  .dark .version-history-entry {
+    background-color: #2c2c2c;
+    border-left: 4px solid #bb86fc;
+  }
+  
+  /* === RESPONSIVE === */
+  @media (max-width: 768px) {
+    .nav-tabs {
+      flex-direction: column;
+    }
+  
+    .tab-content {
+      padding: 1rem;
+    }
+  
+    .tab-button {
+      width: 100%;
+    }
+  }
+
+  .tab-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+  
+  .loading {
+    font-size: 1.1rem;
+    color: #666;
+    margin-top: 1rem;
+    animation: pulse 1s infinite;
+  }
+  
+  .styled-result {
+    background-color: #f4f4f9;
+    border-left: 4px solid #6c63ff;
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #222;
+    border-radius: 6px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+  }
+  
+  .dark .styled-result {
+    background-color: #2b2b2b;
+    color: #eaeaea;
+    border-left-color: #9f8fff;
+  }
+  
+  @keyframes pulse {
+    0% { opacity: 0.6; }
+    50% { opacity: 1; }
+    100% { opacity: 0.6; }
+  }
+  
+  /* TabStyles.css */
+
+.tab-content {
+    padding: 2rem;
+    animation: fadeIn 0.3s ease-in;
+    min-height: 50vh;
+  }
+  
+  .result-box {
+    margin-top: 1rem;
+    padding: 1.5rem;
+    background: var(--tab-bg, #f3f3f3);
+    border-radius: 8px;
+    line-height: 1.6;
+    font-family: 'Segoe UI', sans-serif;
+    color: var(--text-color, #333);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .loading-text {
+    color: #888;
+    font-style: italic;
+  }
+  
+  .section {
+    margin-bottom: 1rem;
+  }
+  
+  .animated.fade-in {
+    animation: fadeIn 0.6s ease;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  
