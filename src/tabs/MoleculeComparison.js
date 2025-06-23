@@ -18,7 +18,7 @@ function MoleculeComparison({ effect, model, trigger }) {
     const fetchComparison = async () => {
       setLoading(true);
       try {
-        const res = await fetch('http://localhost:5000/generate', {
+        const res = await fetch('https://100-agent-hackathon-backend.vercel.app/generate', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
