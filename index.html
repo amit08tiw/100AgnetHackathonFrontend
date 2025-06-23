@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AgentNet BioForge</title>
+</head>
+<body>
+  <h2>BioForge Molecule Generator</h2>
+  <input type="text" id="effectInput" placeholder="Enter biological effect..." />
+  <button onclick="generate()">Generate Molecule</button>
+  <pre id="output"></pre>
+  <script>
+    async function generate() {
+      const effect = document.getElementById("effectInput").value;
+      const res = await fetch("http://localhost:5000/generate", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({effect})
+      });
+      const data = await res.json();
+      document.getElementById("output").textContent = data.result;
+    }
+  </script>
+</body>
+</html>
