@@ -175,7 +175,7 @@ function MoleculeDesign({ effect, model, trigger }) {
                 </>
               )
             )}
-
+            <h3>Molecule Sketch</h3>
             {svgLoading ? (
               <div className="loading">Loading molecule sketch...</div>
             ) : (
