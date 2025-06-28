@@ -151,7 +151,7 @@ function MoleculeDesign({ effect, model, trigger }) {
               <div className="loading">Gathering biomedical evidence...</div>
             ) : evidence.length > 0 && (
               <>
-                <h3>Supporting Evidence</h3>
+                <h3>Supporting Evidence powered by Tavily AI</h3>
                 <ul>
                   {evidence.map((item, idx) => (
                     <li key={idx}>
