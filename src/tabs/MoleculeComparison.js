@@ -60,9 +60,22 @@ function MoleculeComparison({ effect, model, trigger }) {
   return (
     <div className="tab-content">
       <h2 className="tab-title">🔬 Molecule Comparison</h2>
-      {loading ? <div className="loading">🧪 Comparing molecules...</div> : renderFormatted()}
+  
+      {/* Placeholder before comparison trigger */}
+      {!trigger && !loading && !comparison && (
+        <div className="placeholder">
+          📊 Generate a molecule first to compare it with known alternatives and evaluate key differences.
+        </div>
+      )}
+  
+      {/* Loading indicator */}
+      {loading && <div className="loading">🧪 Comparing molecules...</div>}
+  
+      {/* Render result */}
+      {!loading && renderFormatted()}
     </div>
   );
+  
 }
 
 export default MoleculeComparison;
