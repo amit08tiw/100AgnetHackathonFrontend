@@ -16,7 +16,7 @@ function LandingPage() {
     setTimeout(() => {
       setLoading(false);
       navigate('/design');
-    }, 3000); // simulate loading for 2 seconds
+    }, 2000); // simulate loading for 2 seconds
   };
 
   const handleWatchDemo = () =>
@@ -38,7 +38,16 @@ function LandingPage() {
           <li onClick={() => handleScroll('how-it-works')}>How it Works?</li>
           <li onClick={() => handleScroll('pricing-section')}>Pricing</li>
           <li onClick={() => handleScroll('testimonial-section')}>Testimonials</li>
-          <li onClick={() => handleScroll('contact-section')}>Documentation</li>
+          <li>
+            <a
+              href="https://drive.google.com/file/d/1hz8HLKr5z-o4hPZslQcfk3SzlpGdsJaH/view?usp=sharing" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className='documentLink'
+            >
+              Documentation
+            </a>
+          </li>
           <li onClick={() => handleScroll('contact-section')}>Contact</li>
         </ul>
         <button className="get-started-btn" onClick={handleTryNow}>
@@ -99,7 +108,7 @@ function LandingPage() {
         <blockquote>
           “AgentNet BioForge saved me weeks of lab time by predicting molecule behavior before synthesis.”
         </blockquote>
-        <cite>– Dr. Amit Tiwary, Synthetic Biologist</cite>
+        <cite>– Dr. XYZ, Synthetic Biologist</cite>
       </section>
 
       {/* === PRICING === */}
@@ -148,7 +157,7 @@ function LandingPage() {
         <h2>📫 Get in Touch</h2>
         <p>Have questions, ideas, or want to collaborate?</p>
         <p>Email us: <a href="mailto:amittiwary@gmail.com">amittiwary08@gmail.com</a></p>
-        <p style={{ marginBottom: '0px' }}>Follow on X: <a href="https://twitter.com/" target="_blank" rel="noreferrer">@agentnet</a></p>
+        <p style={{ marginBottom: '0px' }}>Follow on X: <a href="https://twitter.com/" target="_blank" rel="noreferrer">amit08tiw</a></p>
       </section>
 
       {/* === FOOTER === */}
