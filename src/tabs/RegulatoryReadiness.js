@@ -47,11 +47,18 @@ function RegulatoryReadiness({ effect, model, trigger }) {
   return (
     <div className="tab-content">
       <h2 className="tab-title">📋 Regulatory Readiness</h2>
-
-      {!effect && <p className="dim-text">Please generate a molecule to assess readiness.</p>}
-
+  
+      {/* 🔹 Placeholder message before generation */}
+      {!trigger && !loading && !regulatoryData && (
+        <div className="placeholder">
+          🧪 Start by generating a molecule to assess its potential for FDA/EMA approval and required preclinical steps.
+        </div>
+      )}
+  
+      {/* 🔄 Loading state */}
       {loading && <p>🔍 Analyzing regulatory status...</p>}
-
+  
+      {/* ✅ Render regulatory data */}
       {regulatoryData && !loading && (
         <>
           <ul className="readiness-list">
@@ -59,7 +66,7 @@ function RegulatoryReadiness({ effect, model, trigger }) {
             <li><strong>EU EMA Approval Likelihood:</strong> {regulatoryData.euApprovalLikelihood}</li>
             <li><strong>Patent Status:</strong> {regulatoryData.patentStatus}</li>
           </ul>
-
+  
           <div className="required-studies">
             <strong>🧪 Required Preclinical Studies:</strong>
             <ul>
@@ -68,7 +75,7 @@ function RegulatoryReadiness({ effect, model, trigger }) {
               ))}
             </ul>
           </div>
-
+  
           <div className="recommendation">
             <strong>📌 Notes & Guidance:</strong>
             <p>{regulatoryData.notes}</p>
@@ -77,6 +84,7 @@ function RegulatoryReadiness({ effect, model, trigger }) {
       )}
     </div>
   );
+  
 }
 
 export default RegulatoryReadiness;
