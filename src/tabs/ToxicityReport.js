@@ -63,10 +63,22 @@ function ToxicityReport({ effect, model, trigger }) {
   return (
     <div className="tab-content">
       <h2>🧪 Toxicity Report</h2>
+  
+      {/* Placeholder if no trigger yet */}
+      {!trigger && !loading && !report && (
+        <div className="placeholder">
+          🧬 Start by entering a biological effect (e.g., "reduce anxiety") and clicking **Generate** to view its toxicity analysis.
+        </div>
+      )}
+  
+      {/* Loading spinner */}
       {loading && <p className="loading-text">⏳ Generating toxicity report...</p>}
+  
+      {/* Final rendered report */}
       {!loading && renderFormattedReport()}
     </div>
   );
+  
 }
 
 export default ToxicityReport;
