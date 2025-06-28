@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import './TabStyles.css';
 
-function VersionHistory({ onRestore }) {
+function VersionHistory({ reloadTrigger, onRestore }) {
   const [history, setHistory] = useState([]);
 
   useEffect(() => {
     const saved = JSON.parse(localStorage.getItem('bioforge-history')) || [];
     setHistory(saved);
-  }, []);
+  }, [reloadTrigger]); // re-read history when parent updates reloadTrigger
 
   const handleRestore = (item) => {
     if (onRestore) {
@@ -20,7 +20,9 @@ function VersionHistory({ onRestore }) {
       <h2 className="tab-title">📚 Version History</h2>
 
       {history.length === 0 && (
-        <p className="dim-text">No previous versions available yet. Try generating a molecule.</p>
+        <div className="placeholder">
+          📦 No saved versions yet. Generate a molecule to start building your version history.
+        </div>
       )}
 
       {history.map((item, idx) => (
