@@ -211,9 +211,9 @@ body {
   
   .styled-result {
     background-color: #f4f4f9;
-    border-left: 4px solid #6c63ff;
+    /* border-left: 4px solid #6c63ff; */
     padding: 20px;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     font-size: 1rem;
     line-height: 1.6;
     color: #222;
@@ -222,6 +222,12 @@ body {
   }
   
   .dark .styled-result {
+    background-color: #2b2b2b;
+    color: #eaeaea;
+    border-left-color: #9f8fff;
+  }
+
+  .dark .patent-section .styled-result {
     background-color: #2b2b2b;
     color: #eaeaea;
     border-left-color: #9f8fff;
@@ -276,4 +282,103 @@ body {
     }
   }
   
+  .result-layout {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1rem;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
   
+  .result-column {
+    flex: 2;
+    min-width: 300px;
+    height: -webkit-fill-available;
+  }
+  
+  .evidence-column {
+    flex: 1;
+    min-width: 250px;
+    background: #f9f9f9;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  .evidence-column h3 {
+    margin-top: 1.5rem;
+  }
+  
+  .evidence-column ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .evidence-column li {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .evidence-column a {
+    text-decoration: none;
+    color: #0077cc;
+  }
+  
+  .evidence-column a:hover {
+    text-decoration: underline;
+  }
+  /* Patent Document Styling */
+.patent-section {
+  background-color: #fdfdfd;
+  border: 1px solid #d1d1d1;
+  padding: 1.5rem;
+  margin-top: 1rem;
+  border-radius: 10px;
+  font-family: 'Georgia', serif;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.patent-section h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.5rem;
+  font-family: 'Times New Roman', serif;
+  color: #333;
+}
+
+.patent-section .styled-result {
+  line-height: 1.75;
+  color: #222;
+  font-size: 1rem;
+  border-left: 4px solid #6c63ff;
+}
+
+.patent-section strong {
+  font-weight: 600;
+  display: inline-block;
+  margin-top: 1rem;
+  color: #111;
+}
+
+.dark .patent-section strong {
+  background-color: #2b2b2b;
+  color: #eaeaea;
+  border-left-color: #9f8fff;
+}
+
+.patent-section br + strong {
+  margin-top: 1rem;
+}
+
+.patent-section ul {
+  padding-left: 1.5rem;
+  list-style-type: disc;
+  margin: 1rem 0;
+}
+
+.loading {
+  font-style: italic;
+  color: #888;
+  margin-top: 0.5rem;
+}
