@@ -23,6 +23,14 @@ body{
     margin-top: 0px;
     color: #fff;
   }
+  .documentLink{
+    color:white;
+    text-decoration: none;
+  }
+  .documentLink:hover{
+    color: #7ed6df;
+    text-decoration: none;
+  }
   .powered-by {
     background: rgba(255, 255, 255, 0.1); /* Semi-transparent */
     backdrop-filter: blur(10px); /* Glass blur */
